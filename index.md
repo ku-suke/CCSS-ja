@@ -13,7 +13,7 @@ CCSSは、暗号通貨を保管、取引、または受け入れる情報シス�
 
 これらの10の観点は、ガイドラインの構造化に役立つ2つの領域に編成されています。 セキュリティ標準の要約は、「レベルI」システムであるAcme Exchangeを監査した後のサンプル結果を示す下の例に示されています。 いくつかの観点でLevel IIおよびLevel IIIのスコアが満たせていますが、Acme ExchangeはレベルIのシステムに分類されています。それは、すべての観点で満たすことができている一番低いスコアがレベルIだからです。
 
-## Acme Exchangeの CCSS監査結果: ![img](/CCSS/images/CCSS Matrix.png)
+## Acme Exchangeの CCSS監査結果: ![img](/CCSS-ja/images/CCSS Matrix.png)
 
 # スコープ
 
