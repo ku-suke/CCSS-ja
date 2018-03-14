@@ -7,43 +7,43 @@
 ###################################################
 
 id: 1.06
-title: Keyholder Grant/Revoke Policies & Procedures
+title: 暗号鍵保有者の権限付与/取り消しポリシーと手続
 file: 106-KeyholderGrantRevokePoliciesAndProcedures
 
 category: 暗号資産管理
 
 description: >
-  This aspect covers the policies and procedures surrounding granting and revoking access to cryptographic [keys](#key) or [seeds](#seed) that store organizational or end-user funds. Staff typically have greater access to an information system with respect to accessing its information, invoking privilege-restricted actions, and representing the organization to the public. Improper management of the onboarding and offboarding of personnel introduce risks of privileged accounts remaining when staff depart, as well as unrevoked keys that persist [signing](#signature) authority for certain transactions.
+  この観点は、組織またはエンドユーザーの資金を保管する[暗号鍵](#key)または[シード](#seed)へのアクセスを許可および取り消すことに関するポリシーおよび手順を網羅しています。 スタッフは通常、情報自身をみるためや、特別な権限が必要なアクションの実行、公衆に対して組織を代表するためなど、情報システムへのアクセスがより多くなります。 従業員の任命や解任の不適切な管理は、スタッフが退職するときに特権アカウントや、特定のトランザクションへ署名権限を有する利用可能な鍵が残るリスクがあります。
 
 level_one:
-  - An awareness of how roles should be managed when onboarding or offboarding staff from keyholder positions exists within the organization. A staff member who is knowledgeable about the system is able to ensure that permissions are granted/revoked to/from the affected staff appropriately.
+  - 組織内に、暗号鍵を保有するポジションに任命または解任するスタッフが発生した時、どのように役割を管理するかについての認識があります。 システムを管理するスタッフは、影響を受けるスタッフに対して適切な権限の許可または取り消しを確実に行うことができます。
 
 level_two:
-  - The organization maintains checklists that cover all tasks that must be completed when staff vacate or transition into keyholder roles within the organization. These checklists have been reviewed by knowledgeable personnel to ensure "least privilege principles" are applied to the information system, as well as necessary access where required. This eliminates the risks associated with missed privileges and the possession of un-revoked [keys](#key).
-  - All keyholder grant/revoke requests are conducted over [Authenticated Communication Channels](#authenticated-communication-channel)
+  - 組織は、スタッフが退職したり、組織内で暗号鍵を保有する役割に異動したりするときに完了しなければならないすべてのタスクをカバーするチェックリストを保持しています。 これらのチェックリストは、情報システムに「最低特権の原則」が確実に適用され、必要な場合にのみ必要なアクセスが行われるように、知識豊富な人が確認しました。 これにより、不適切な権限および失効していない暗号鍵の所持に関連するリスクが排除されます。
+  - すべての暗号鍵保有者に対する許可・取り消しは[承認された連絡チャネル](#authenticated-communication-channel)を介して行われます。
 
 level_three:
-  - The organization's checklists include auditing information that record the identity of the staff member that performs the grant/revoke operations. Each entry within the audit trail is attested to by the staff member who performed that task.
-
+  - 組織のチェックリストには、許可/取り消し操作を実行するスタッフの身元を記録する監査情報が含まれています。 監査証跡内の各エントリは、そのタスクを実行したスタッフによって証明されます。
+  
 components:
   - component: &010601
     id: 1.6.1
-    title_short: Grant/Revoke Procedures/Checklist
-    uncertified: No Policy/Procedures in place
-    level_one: Permission changes for incoming/outgoing staff are performed by someone knowledgeable with the system
-    level_two: A written checklist/procedure document exists that is followed for on/offboarding. The checklist outlines every permission to grant/revoke for every role in the information system.
-    level_three: A written checklist/procedure document exists that is followed for on/offboarding. The checklist outlines every permission to grant/revoke for every role in the information system.
+    title_short: 許可・取り消しに関する手順やチェックリスト
+    uncertified: ポリシーや手順はない
+    level_one: 入退出したスタッフの権限の変更は、システム管理者が行います
+    level_two: 入退出時のチェックリスト・手順書が存在する。 チェックリストには、情報システムのすべての役割に対して付与/取り消すべき権限がすべて記載されています。
+    level_three: 入退出時のチェックリスト・手順書が存在する。 チェックリストには、情報システムのすべての役割に対して付与/取り消すべき権限がすべて記載されています。
   - component: &010602
     id: 1.6.2
-    title_short: Requests made via Authenticated Communication Channel
+    title_short: 承認された連絡チャネルでの申請
     uncertified:
     level_one:
-    level_two: All grant/revoke requests are made via an Authenticated Communication Channel
-    level_three: All grant/revoke requests are made via an Authenticated Communication Channel
+    level_two: すべての許可・取り消し申請は、承認された連絡チャネル経由で行われます
+    level_three: すべての許可・取り消し申請は、承認された連絡チャネル経由で行われます
   - component: &010603
     id: 1.6.3
-    title_short: Grant/Revoke Audit Trail
+    title_short: 許可・取り消しの監査証跡
     uncertified:
     level_one:
     level_two:
-    level_three: An audit trail records every change of access including who performed the change
+    level_three: 変更の実行者も含んだ監査証跡がすべての権限変更に対して残されます
