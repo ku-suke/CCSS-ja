@@ -7,92 +7,92 @@
 ###################################################
 
 id: 1.04
-title: Key Usage
+title: 暗号鍵の利用
 file: 104-KeyUsage
 
 category: 暗号資産管理
 
 description: >
-  This aspect covers the use of cryptographic [keys](#key) and/or [seeds](#seed) to ensure they are used in a secure manner that minimizes the risks to the confidentiality of private keys and integrity of funds. This section does not cover the usage of key backups which are only used in the event the primary key is lost/damaged/inaccessible. A variety of risks are present when using keys that can lead to the loss of funds including dirty signature vulnerabilities (i.e. re-used 'R' values), opportunity for malware to copy or modify keys, and malicious insiders who use their authorized access to send unauthorized transactions.
+  この観点は、秘密鍵の機密性と資金の完全性への危険性を最小限に抑え、安全に暗号鍵・シードを使用する方法を対象としています。 このセクションでは、主な暗号鍵が失われた・破損した・アクセスできない場合にのみ使用されるバックアップ用暗号鍵の使用については説明しません。悪質なシグネチャの脆弱性（例：「R」値の再利用）、マルウェアによる暗号鍵のコピーまたは改ざんの可能性、正当なアクセス件を使用して許可されていないトランザクションを送信する悪意のある内部者など、送金時の暗号鍵の利用には資金の損失を招く可能性のある様々なリスクが存在します。
 
 level_one:
-  - Access to the primary [key](#key)/[seed](#seed) requires an identifier (e.g. username, email, GUID, etc.) and at least 2 (two) other [factors of authentication](#authentication-factor), which restricts access to the authorized operator. Examples of additional factors of authentication include Google Authenticator tokens, digital signatures from a private key, in-person ID verification, possession of a physical key or token, or a countersigning organization who can remotely attest to the authenticity of the key holder.
-  - All [keys](#key)/[seeds](#seed) are only used in [trusted environments](#trusted-environment). This somewhat reduces the risk of unauthorized copies being made by malware, as well as mitigating the risk of storing (even inadvertently) a key on a machine, allowing it to be recovered by another user or intruder. An effective trusted environment guards against unauthorized persons learning private keys, passwords, or other sensitive information.
-  - All [key](#key)/[seed](#seed)-holders have had their references checked prior to being trusted to hold one of the organization’s keys/seeds. This helps ensure the person is being truthful about their past and were not dismissed from prior employment for reasons that would represent a risk to the organization.
-  - No two [master keys](#key)/[seeds](#seed) of the same [multi-signature](#multisig) wallet are ever present on the same device. Placing two keys of the same wallet on a single device exposes the keys to information leakage by either a malicious operator or malicious software. Ensuring every key of a wallet is used on dedicated devices reduces these risks, thereby increasing security.
-  - Digital [signatures](#signature) must use a 'k' value that is never repeated. This can be accomplished through the use of a [deterministic random bit generator (DRBG)](#drbg) that is compliant with [NIST SP 800-90A](http://http://csrc.nist.gov/publications/nistpubs/800-90A/SP800-90A.pdf), or a deterministic scheme compatible with [RFC 6979](https://tools.ietf.org/html/rfc6979). Using strong sources of [entropy](#entropy) is required in order to prevent "dirty signature" vulnerabilities that can allow attackers to recover the private key that was used to compute the signature. A common implementation of this is to use the [pseudo-random number generator (PRNG)](#prng) supplied by popular operating systems, or an RFC 6979-compatible scheme.
+  - 主な[暗号鍵](#key)・[シード](#seed) へのアクセスには、識別子（例えば、ユーザ名、電子メール、GUIDなど） と、許可されたオペレータへのアクセスを制限する少なくとも2つの[要素による認証](#authentication-factor) が必要です。 Google Authenticatorトークン、秘密鍵からのデジタル署名、個人IDの確認、物理的な鍵またはトークンの所有、または鍵所有者の信頼性を遠隔から証明できる代理組織が認証の追加要因の例として挙げられます。
+  - すべての[暗号鍵](#key)・[シード](#seed) は、[信頼できる環境](#trusted-environment) でのみ使用されます。これにより、マルウェアによる不正コピーのリスクを軽減し、マシン上に暗号鍵がのこることで（たとえ不注意でも）別のユーザーや侵入者がそのキーを回復できるリスクを軽減します。効果的な[信頼できる環境](#trusted-environment)は、権限のない人が秘密鍵、パスワード、またはその他の機密情報を覚えるのを防ぎます。
+  - 組織の[暗号鍵](#key)・[シード](#seed) のいずれかを保持することが許可される前に、すべての担当者がリファレンスチェックを受けます。これは、その人の過去について真実であり、組織にリスクをもたらす理由により以前の職場から解雇されていないことを信用するのに役立ちます。
+  - 同一の[マルチシグ](#multisig) ウォレットの2つの主な[暗号鍵](#key)・[シード](#seed) は、同じデバイス上に存在することはありません。同一ウォレットの2つの鍵を1つのデバイスに配置することで、悪意のあるオペレータまたは悪意のあるソフトウェアによる情報漏洩が起こりえます。ウォレットのすべての鍵が独立したデバイス上で使用されるようにすることで、これらのリスクが軽減され、セキュリティが強化されます。
+  - デジタル[署名](#signature)では、決して繰り返されない「k」値を使用する必要があります。 これは、[NIST SP 800-90A](http://http://csrc.nist.gov/publications/nistpubs/800-90A/SP800-90A.pdf) に準拠した[決定論的乱数生成器](#drbg) ( Deterministic Random Bit Generator; DRBG )、または[RFC 6979](https://tools.ietf.org/html/rfc6979) と互換性のある決定論的スキームを使用することで実現できます。強力な[エントロピー](#entropy) 源を使用することで、攻撃者が署名を計算するために使用された秘密鍵を回復できる「汚れた署名」の脆弱性を防ぐことができます。 この一般的な実装は、一般的なオペレーティングシステムによって提供される[疑似乱数生成器](#prng) (pseudo-random number generator・PRNG)、またはRFC 6979準拠のスキームを使用することです。
 
 level_two:
-  - All organizational [key](#key)/[seed](#seed)-holders have undergone [identity verification](#identity-verification) to ensure they are who they say they are. This reduces the risks associated with impersonation and social engineering attacks which may result in access to organizational or customer funds.
-  - Verification of fund destinations and amounts is performed via a [Authenticated Communication Channel](#authenticated-communication-channel) prior to [key](#key)/[seed](#seed) use. This can be performed by humans before using their keys/seeds to ensure they’re sending the right amount of funds to the right [addresses](#address)/people/companies, or by systems that perform automated signing by checking destination addresses against whitelists and spending limits before the signature is applied. The implementation of payment protocols that provide [digitally signed](#signature) addresses, or the use of systems that display images and business names instead of cryptocurrency addresses greatly simplify this verification process.
+  - すべての組織の暗号鍵保有者は、自分が誰であるかを確実にするために身元確認を受けています。 これにより、偽装やソーシャルエンジニアリング攻撃よる組織や顧客の資金にアクセスするリスクが軽減されます。
+  - 資金の送付先と金額の確認は[暗号鍵](#key)・[シード](#seed)を使用する前に[承認された連絡チャネル](#authenticated-communication-channel)を介して行われます。 これは、人によって適切な送金先[アドレス](#address)/人/会社に正しい金額を送付しようとしているか検証したり、システムによって事前に定めたホワイトリストや制限金額以内であるかを自動的に検証して署名することで実現します。[デジタル署名](#signature) されたアドレスを提供する支払いプロトコルの実装、または暗号化アドレスの代わりに画像やビジネス名を表示するシステムの使用は、この検証プロセスを大幅に単純化します。
 
 level_three:
-  - Access to the [key](#key)/[seed](#seed) requires an identifier (e.g. username, email, GUID, etc.) and at least 3 (three) other [factors of authentication](#authentication-factor). Similar to the requirement of 2 additional factors in Level I, the other 3 factors of authentication in Level III can take any form that provides confirmation of an authorized user's identity.
-  - All organizational [key](#key)/[seed](#seed) holders have had background checks performed by law enforcement personnel or investigative firms. This ensures each key/seed holder is who they say they are and does not have evidence in their past of actions that would represent a risk to the organization if they had signing authority on organization or user funds.
+  - 暗号鍵・シードへのアクセスには、識別子（たとえば、ユーザー名、電子メール、GUIDなど）と、少なくとも3つの他の[認証要素](#authentication-factor) が必要です。レベルIの2つの追加要素の要件と同様に、レベルIIIの他の3つの認証要素は、許可されたユーザーの識別情報の確認を提供する任意の形式をとることができます。
+  - すべての組織のは[暗号鍵](#key)・[シード](#seed)保有者は、法執行人または調査会社によって行われたバックグラウンドチェックを受けています。 これにより、[暗号鍵](#key)・[シード](#seed)保有者は、組織やユーザーの送金に署名する権限を持っていれば、組織に対するリスク行為などの証拠がなく、その人が本人であることが保証されます。
 
 components:
   - component: &010401
     id: 1.4.1
-    title_short: Key access requires user/pass/nth factor
-    uncertified: Access to key/seed does not require sufficient factors of authentication to provide adequate security
-    level_one: Access to key/seed requires an identifier and at least 2 other factors (password, MFA token, in-person verification by guard, IP address whitelist, physical key to gain access to secured storage, countersigning organization)
-    level_two: Access to key/seed requires an identifier and at least 2 other factor (password, MFA token, in-person verification by guard, IP address whitelist, physical key to gain access to secured storage, countersigning organization)
-    level_three: Access to key/seed requires an identifier and at least 3 other factors (password, MFA token, in-person verification by guard, IP address whitelist, physical key to gain access to secured storage, countersigning organization)
+    title_short: 鍵アクセスの多要素認証
+    uncertified: 暗号鍵やシードへのアクセスに、十分なセキュリティを満たす認証方法を提供できていない
+    level_one: 暗号鍵・シードへのアクセスには、識別子とともに２つの要素 (パスワード、MFAトークン、警備員による確認、IPアドレスホワイトリスト、安全な保管庫にアクセスできる物理鍵、別の認証組織)での認証が必要
+    level_two: 暗号鍵・シードへのアクセスには、識別子とともに２つの要素 (パスワード、MFAトークン、警備員による確認、IPアドレスホワイトリスト、安全な保管庫にアクセスできる物理鍵、別の認証組織)での認証が必要
+    level_three: 暗号鍵・シードへのアクセスには、識別子とともに３つの要素 (パスワード、MFAトークン、警備員による確認、IPアドレスホワイトリスト、安全な保管庫にアクセスできる物理鍵、別の認証組織)での認証が必要
   - component: &010402
     id: 1.4.2
-    title_short: Keys are only used in a trusted environment
-    uncertified: Keys/seeds are used on public/untrusted machines, or in environments where passwords/secrets can be disclosed
-    level_one: Keys/seeds are only used in trusted environments
-    level_two: Keys/seeds are only used in trusted environments
-    level_three: Keys/seeds are only used in trusted environments
+    title_short: 暗号鍵の信頼できる環境での使用
+    uncertified: 暗号鍵・シードは公共のあるいは信用できないマシン、あるいはパスワードやシークレットが漏洩する環境で実行される
+    level_one: 暗号鍵・シードは信頼できる環境でしか使用されない
+    level_two: 暗号鍵・シードは信頼できる環境でしか使用されない
+    level_three: 暗号鍵・シードは信頼できる環境でしか使用されない
   - component: &010403
     id: 1.4.3
-    title_short: Operator reference checks
-    uncertified: No checks are performed on key/seed holders
-    level_one: Key/seed holders have references checked
-    level_two: Key/seed holders have references checked
-    level_three: Key/seed holders have references checked
+    title_short: オペレーターのリファレンスチェック
+    uncertified: 暗号鍵・シード保有者に対してチェックを行っていない
+    level_one: 暗号鍵・シード保有者はリファレンスチェック済み
+    level_two: 暗号鍵・シード保有者はリファレンスチェック済み
+    level_three: 暗号鍵・シード保有者はリファレンスチェック済み
   - component: &010404
     id: 1.4.4
-    title_short: Operator ID checks
-    uncertified: ID of one or more operators is not established
-    level_one: Key/seed holders have identify verified
-    level_two: Key/seed holders have identify verified
-    level_three: Key/seed holders have identify verified
+    title_short: オペレーターの本人確認
+    uncertified: 一人以上のオペレーターの本人確認ができていない
+    level_one: 暗号鍵・シード保有者は本人確認済み
+    level_two: 暗号鍵・シード保有者は本人確認済み
+    level_three: 暗号鍵・シード保有者は本人確認済み
   - component: &010405
     id: 1.4.5
-    title_short: Operator background checks
+    title_short: オペレーターのバックグラウンドチェック
     uncertified:
     level_one:
     level_two:
-    level_three: Key/seed holders have undergone background checks
+    level_three: 暗号鍵・シード保有者はバックグラウンドチェック済み
   - component: &010406
     id: 1.4.6
-    title_short: Spends are verified before signing
+    title_short: 署名前の送金確認
     uncertified:
     level_one:
-    level_two: Verification of fund destinations and amounts are performed prior to key usage
-    level_three: Verification of fund destinations and amounts are performed prior to key usage
+    level_two: 暗号鍵を使用する前に金額と送金先が正しいことを確認している
+    level_three: 暗号鍵を使用する前に金額と送金先が正しいことを確認している
   - component: &010407
     id: 1.4.7
-    title_short: No two keys are used on one device
-    uncertified: Multiple keys for a single asset used on one device
-    level_one: No two keys belonging to the same wallet are present on any one device
-    level_two: No two keys belonging to the same wallet are present on any one device
-    level_three: No two keys belonging to the same wallet are present on any one device
+    title_short: 複数署名鍵の一か所への保存
+    uncertified: 単一の資産に対する暗号鍵が１つのデバイスに保存されている
+    level_one: 単一のウォレットに紐づく２つの鍵は同一デバイスに保管されていない
+    level_two: 単一のウォレットに紐づく２つの鍵は同一デバイスに保管されていない
+    level_three: 単一のウォレットに紐づく２つの鍵は同一デバイスに保管されていない
   - component: &010408
     id: 1.4.8
-    title_short: DRBG Compliance
-    uncertified: Signatures use a non-compliant DRBG and may be susceptible to "dirty signature" vulnerabilities
+    title_short: DRBG 準拠
+    uncertified: 署名は"汚れた署名"を引き起こす可能性のあるDRBGに準拠していないものを使用している
     level_one: >
-      The 'k' values in digital signatures are created using a NIST SP 800-90A compliant DRBG
-      OR
-      The 'k' values are created deterministically according to RFC 6979
+      デジタル署名中の「K値」はNIST SP 800-90A準拠のDRBGを使用して生成される
+      または、
+      「K値」はRFC 6979に従い決定論的に生成される
     level_two: >
-      The 'k' values in digital signatures are created using a NIST SP 800-90A compliant DRBG
-      OR
-      The 'k' values are created deterministically according to RFC 6979
+      デジタル署名中の「K値」はNIST SP 800-90A準拠のDRBGを使用して生成される
+      または、
+      「K値」はRFC 6979に従い決定論的に生成される
     level_three: >
-      The 'k' values in digital signatures are created using a NIST SP 800-90A compliant DRBG
-      OR
-      The 'k' values are created deterministically according to RFC 6979
+      デジタル署名中の「K値」はNIST SP 800-90A準拠のDRBGを使用して生成される
+      または、
+      「K値」はRFC 6979に従い決定論的に生成される
