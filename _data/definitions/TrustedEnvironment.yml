@@ -1,15 +1,15 @@
 
 id: trusted-environment
 file: TrustedEnvironment
-term: Trusted Environment
+term: 信頼された環境
 description: >
-  For the purposes of this specification, trusted environments include:  
-    -  machines owned by the organization with appropriate antivirus/anti-malware software installed  
-    -  machines owned by a keyholder  
-    -  other machines upon which the organization permits the use of [keys](#keys)/[seeds](#seeds).
+  この仕様の目的上、信頼できる環境には次のものがあります。
+     - 適切なアンチウィルス/マルウェア対策ソフトウェアをインストールした組織が所有するマシン
+     - 暗号鍵の利用者が所有するマシン
+     - 組織が[暗号鍵](#key)や[シード](#seed)の使用を許可する他のマシン
 
-  An organization's trusted environment policy should require hard disk encryption, short screen-lock timeouts, sufficiently [entropic](#entropy) account passwords, and other sensible security measures.  
+  組織の「信頼された環境」ポリシーでは、ハードディスクの暗号化、短い画面ロックのタイムアウト、十分に[エントロピー](#entropy)なアカウントのパスワード、その他の賢明なセキュリティ対策が必要です。
 
-  Additionally, trusted environments should, where possible, make use of physical access control to prevent "shoulder surfing" of keyboard and screen by unauthorized individuals.  
+  さらに、信頼できる環境では、可能であれば物理的なアクセス制御を利用して、許可されていない個人によるキーボードや画面の「肩ごしののぞき見」を防止する必要があります。
 
-  Public machines such as those in Internet cafes, libraries, and other public spaces are *not* trusted environments.
+  インターネットカフェ、図書館、その他の公共スペースなどの公共のマシンは、信頼された環境「ではありません」。

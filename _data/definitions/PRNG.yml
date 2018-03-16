@@ -1,7 +1,7 @@
 
 id: prng
 file: PRNG
-term: Pseudo-Random Number Generator
+term: 疑似乱数生成器（PRNG）
 description: >
-  An algorithm, program, or system used to produce arbitrary difficult-to-guess values for cryptographic applications. Typically [seeded](#seed) with some source of [entropy](#entropy), PRNGs are used, among other things, to generate [cryptographic keys](#key). Sometimes CSPRNG (Cryptographically Secure PRNG). See related: [DRBG (Deterministic Random Bit Generator)](#drbg).
+  暗号化アプリケーションのための推測が困難な任意の値を生成するために使用されるアルゴリズム、プログラム、またはシステム。 典型的には、ある[エントロピー](#entropy)源を用いて[シード](#seed)され、PRNGはとりわけ暗号鍵を生成するために使用される。CSPRNG（暗号論的セキュアPRNG）と呼ぶ場合もある。参考：[DRBG (Deterministic Random Bit Generator)](#drbg).
   [Wikipedia](https://en.wikipedia.org/wiki/Pseudorandom_number_generator)

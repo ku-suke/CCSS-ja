@@ -1,6 +1,6 @@
 
 id: entropy
 file: Entropy
-term: Entropy
+term: エントロピー
 description: >
-  Randomness usually collected from hardware, environmental factors (time of execution), or external sources (user-input). [Wikipedia](https://en.wikipedia.org/wiki/Entropy_%28computing%29)
+  ハードウェアや環境要因（実行時間）、または外部ソース（ユーザー入力）などから収集されるランダム性。[Wikipedia](https://en.wikipedia.org/wiki/Entropy_%28computing%29)

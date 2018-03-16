@@ -1,6 +1,6 @@
 
 id: drbg
 file: DRBG
-term: Deterministic Random Bit Generator
+term: 決定論的乱数生成器（DRBG）
 description: >
-  A kind of [PRNG](#prng) that can produce some number of values (usually [keys](#keys)) from a single [seed](#seed). DRBGs are primarily useful due to their ability to limit a system's reliance secure sources of [entropy](#entropy)
+  1つのシードからいくつかの値（通常は暗号鍵）を生成できる[PRNG](#prng)の一種。DRBGは、システムが[エントロピー](#entropy) の安全なソースに依存することを制限するために、主に有用である。

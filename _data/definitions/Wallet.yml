@@ -1,13 +1,13 @@
 
 id: wallet
 file: Wallet
-term: Wallet
+term: ウォレット
 description: >
-  In the context of most cryptocurrencies, a wallet is a public-private keypair, where some encoding of the public key (an [address](#address)) can be used in transaction outputs to transfer funds. The private key can then be used to generate a valid signature for a transaction spending those funds.
-  In practice, however, 'wallet' usually refers to an application that manages a large number of these keypairs, allowing a new address to be used for each transactions. Wallet applications generally fall into one of two categories:  
-    -  JBOK (Just a Bunch of Keys) Wallets where the wallet uses a [PRNG](#prng) to generate each keypair and stores them for use.  
-    -  [HD (Hierarchical Deterministic) Wallets](#hd-wallet) which derives an arbitrary number of keypairs from one random [seed](#seed).
+  暗号通貨の文脈ではおおむね、ウォレットは公開鍵暗号のキーペアであり、公開鍵（[アドレス](#address)）を暗号化するためにトランザクション出力に使用できます。 秘密鍵は、それらの資金を消費するトランザクションの有効な署名を生成するために使用できます。
+  しかし、実際には、「ウォレット」は通常、これら多数のキーペアを管理するアプリケーションを指し、各トランザクションに新しいアドレスを使用できるようにします。 ウォレットアプリケーションは、一般に次の2つのカテゴリのいずれかに分類されます。
+     - JBOK（Just a Bunch of Keys）財布が[PRNG](#prng)を使用して各鍵ペアを生成し、使用するために保管する財布。
+     - 1つのランダム[シード](#seed)から任意の数のキーペイを派生する[HD（階層的決定論的）ウォレット](#hd-wallet)。
 
-  Wallet software can introduce additional complexity, for example by combining multiple keypairs into single addresses, as in the case of a [multi-signature](#multisig) wallet.
+  ウォレットソフトウェアは、[マルチシグ](#multisig) ウォレットの場合のように、複数のキーペアを単一のアドレスに組み合わせるなど、複雑さを増やす可能性があります。
 
-  For the purposes of this document, the term 'wallet' refers to some *collection* of cryptocurrency [addresses](#address).
+  このドキュメントでは、「ウォレット」という用語は、暗号通貨[アドレス](#address)のいくつかのコレクションを指します

@@ -1,6 +1,6 @@
 
 id: address
 file: Address
-term: Address
+term: アドレス
 description: >
-  A cryptocurrency address is (usually) an encoded form of a public key from a [wallet](#wallet) that can be used as the recipient of a transaction. In [multi-signature](#multisig) schemes, an address may be an encoding of information including several public keys and/or other information as in the case of a bitcoin [P2SH](https://en.bitcoin.it/wiki/Pay_to_script_hash) address.
+  暗号通貨アドレスは（通常）トランザクションの受信者として使用できる[ウォレット](#wallet)の公開鍵から符号化された形式です。 [マルチシグ](#multisig)方式では、アドレスはビットコインの[P2SH](https://en.bitcoin.it/wiki/Pay_to_script_hash)アドレスの場合のように、いくつかの公開鍵や他の情報を含む情報の符号化であってもよい。

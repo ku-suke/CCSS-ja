@@ -1,13 +1,13 @@
 
 id: authentication-factor
 file: AuthenticationFactor
-term: Factor of Authentication
+term: 認証要素
 description: >
-  [Multi-factor authentication](https://en.wikipedia.org/wiki/Multi-factor_authentication) schemes require multiple demonstrations of identity. The most common example is a username and password combination, where each input is a factor of authentication. To access protected information in this scheme, an [actor](#actor) must provide those two pieces of information.
-  Additional factors generally (although with diminishing returns) increase the security of the system.
-  Common examples include:  
-    -  A [TOTP](https://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm) token may be required, where the token can only be obtained from a device seeded with the TOTP secret (Google Authenticator), which effectively requires the actor be in possession of a specific pre-authorized device.  
-    -  An [OTP](#otp) can be delivered to a phone number via SMS, MMS, or a voice call.  
-    -  A biometric scan may be required - although this is usually only useful if the access point is in a controlled and trusted environment.  
+  [多要素認証](https://en.wikipedia.org/wiki/Multi-factor_authentication)方式では、複数の識別子を入力する必要があります。 最も一般的な例は、ユーザー名とパスワードの組み合わせです。それぞれの入力は単一の認証要素です。 このスキームで保護された情報にアクセスするには、[利用者](#actor) はこれらの2つの情報を提供する必要があります。
+  一般的に要素数を追加すると（収穫逓減の法則により）システムのセキュリティが向上します。
+  要素の例：  
+    - [TOTP](https://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm)トークンを必要にします。トークンは、TOTPシークレット（Google Authenticatorなど）が導入されたデバイスからのみ取得できます。このため、[利用者](#actor)は特定の事前認可済みデバイスを所有している必要があります。
+    - OTPは、SMS、MMS、または音声コールを介して電話番号に配信できます。  
+    - 生体認証が必要な場合がありますが、通常、利用場所が制御された信頼できる環境にある場合にのみ有効です。
 
-  Colloquially, a username is not considered a factor of authentication since usernames are not commonly secret information. The same applies to email addresses, phone numbers, and other pieces of data which only "identify" actors. The requirement imposed by a factor of authentication should only be satisfiable by the actor identified.
+  言い換えれば、ユーザー名は一般的に秘密情報ではないため、ユーザー名は認証の要素とはみなされません。利用者だけを「識別する」電子メールアドレス、電話番号、その他のデータにも同じことが当てはまります。 認証の要素によって課せられる要件は、識別された利用者によってのみ満たされるべきです。

@@ -1,6 +1,6 @@
 
 id: key-compromise-protocol
 file: KeyCompromiseProtocol
-term: Key Compromise Protocol
+term: 暗号鍵の漏洩時手順
 description: >
-  A document that outlines the specific actions that are to be taken by every actor in an Information System in order to regenerate the system's set of keys in the event that a key may have been compromised.
+  暗号鍵が漏洩した可能性がある場合にシステムのキーセットを再生成するために、情報システム内のすべての利用者が行うべき特定のアクションを概説する文書。
