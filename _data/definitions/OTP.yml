@@ -1,8 +1,8 @@
 
 id: otp
-term: One-Time Password
+term: ワンタイムパスワード
 file: OTP
 description: >
-  A one-time password is any token (often used as a [factor of authentication](#authentication-factor)) that is valid for one and only one use. OTP tokens are generally as secure as the weakest of:  
-    1. The channel used to deliver the OTP to the intended user, if any.  
-    2. The system where the OTP is generated and stored until "redeemed."
+  ワンタイムパスワードとは、1つの用途にのみ有効な任意のトークン（多くの場合、[認証の要素](#authentication-factor)として使用される）です。 OTPトークンは、一般に次の中で最も弱いものとして安全です。
+    1. OTPを意図されたユーザ（もしあれば）に配信するために使用されるチャネル。
+    2. OTPが生成され、「償還」まで保管されているシステム。

@@ -1,8 +1,8 @@
 
 id: key
 file: Key
-term: Key
+term: 暗号鍵
 description: >
-  (stub) A cryptographic key is an input to a cryptographic function. [Wikipedia](https://en.wikipedia.org/wiki/Key_%28cryptography%29)
-  In [public-key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography) a public key is used to encrypt data that can only be decrypted using a corresponding private key. Similarly, the private key can be used to generate irreproducible [signatures](#signature) for arbitrary data which the public key can verify.
-  In cryptocurrency, a private key may often include additional application-specific information such as bitcoin's [chain code](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki#user-content-extended-keys). In such cases, the term `key` can apply to extended key information OR partial information which might be used to reconstruct a full key as both are sensitive, private information.
+  （スタブ）暗号鍵は、暗号を使用する機能へ入力されるものです。 [Wikipedia](https://en.wikipedia.org/wiki/Key_%28cryptography%29)
+  [公開鍵暗号](https://en.wikipedia.org/wiki/Public-key_cryptography)では、公開鍵を使用して、対応する秘密鍵を使用してのみ解読できるデータを暗号化します。 同様に、秘密鍵は、公開鍵が検証できる任意のデータに対する再現不可能な[署名](#signature)を生成するために使用することができます。
+  仮想通貨においては、秘密鍵にビットコインの[チェーンコード](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki#user-content-extended-keys)などのアプリケーション固有の情報が追加されることがあります。 そのような場合、「鍵」という用語は、センシティブで秘密情報である鍵の拡張情報またはフル鍵を再生成するために使用される断片情報の両方に適用することができる。

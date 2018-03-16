@@ -1,7 +1,7 @@
 
 id: hd-wallet
 file: HDWallet
-term: Hierarchical Deterministic Wallet
+term: 階層的決定性（HD）ウォレット
 description: >
-  A [wallet](#wallet) that uses a cryptographically secure key derivation function (e.g. [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2)) to create an arbirtarily large number of unique [addresses](#address) from a single master [seed](#seed). These are beneficial as only the master seed needs to be backed up to protect against loss. Some HD wallet software can also support [multi-signature](#multisig) configurations where multiple master seeds are combined when creating addresses.
-  HD Wallets generally organize addresses into an n-ary tree structure, where each address is associated with a path through the tree. The first HD wallet standard adopted by many applications in the bitcoin community was [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) as proposed by Pieter Wuille. [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) introduced additional functionality allowing sub-paths to be shared without compromising the security of the entire wallet.
+  単一のマスターシードから実質的に多数のユニークな[addresses](#address)を作成するために、暗号的に安全なキー導出関数（例えば、[PBKDF2](https://en.wikipedia.org/wiki/PBKDF2)）を使用する[ウォレット](#wallet)。 これらは、資産を守るためにマスターシードだけをバックアップすればよいので、便利です。 一部のHDウォレット・ソフトウェアは、アドレスの作成時に複数のマスター・[seed](#seed)が結合された[マルチ・シグネチャ](#multisig)構成もサポートしています。
+  HDウォレットは、通常、アドレスをn個のツリー構造に編成します。各アドレスはツリーを通るパスに関連付けられています。 Bitcoinコミュニティの多くのアプリケーションで採用された最初のHDウォレット標準は、Pieter Wuilleの提案した[BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)でした。 [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki)では、ウォレット全体のセキュリティを損なうことなく、サブパスを共有できる追加機能が導入されました。

@@ -1,6 +1,6 @@
 
 id: actor
-term: Actor
+term: 利用者
 file: Actor
 description: >
-  A person, organization, system, or service that (for the purposes of this specification) makes direct use of a cryptographic [key](#key) or [seed](#seed) is an actor in the context of that key or seed.
+  （この仕様の目的上）[暗号鍵](#key)または[シード](#seed)を直接使用する人や組織、システム、またはサービスは、その暗号鍵またはシードの状況下における利用者です。

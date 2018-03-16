@@ -1,6 +1,6 @@
 
 id: multisig
 file: Multisig
-term: Multi-signature
+term: マルチシグネチャ
 description: >
-  A common security feature of cryptocurrency [wallet](#wallet) applications is to require multiple signatures from different [keys](#key) to create a valid transaction.
+ 暗愚通貨[ウォレット](#wallet)アプリケーション共通のセキュリティ機能で、有効なトランザクションを作成するために、異なる[暗号鍵](#key)で複数の署名を要求する機能です。
