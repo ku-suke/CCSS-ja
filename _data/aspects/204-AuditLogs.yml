@@ -7,35 +7,35 @@
 ###################################################
 
 id: 2.04
-title: Audit Logs
+title: 監査証跡
 file: 204-AuditLogs
 
 category: オペレーション
 
 description: >
-  This aspect covers the information system’s maintenance of audit logs that provide a record of all changes to information throughout the system. In the event of unexpected behaviour or security incidents, audit logs are an extremely valuable tool that can help investigators understand how the unexpected symptoms occurred and how to resolve the inconsistencies to return the information system to a consistent state. The maintenance of audit logs significantly reduce the risks associated with operational awareness and increase the information system’s ability to correct any inaccuracies.
+  この観点は、システム全体の情報に対するすべての変更の記録を提供する監査ログのメンテナンスをカバーします。予期しない動作やセキュリティインシデントが発生した場合、監査ログは予期しない現象がどのように発生したかを理解し、矛盾を解消して情報システムを一貫性のある状態に戻すための非常に貴重なツールです。監査ログのメンテナンスは、日々のオペレーションを認識し、情報システムの不正確さを修正する能力を向上させることでリスクを大幅に低減します。
 
 level_one:
-  - Audit trails exist for a subset of actions that are performed within the information system. Examples of this would include recording audit information of all withdrawals and deposits made with the system.
+  - 監査証跡は、情報システム内で実行される業務の一部に対して存在します。この例には、システムで行われたすべての引出しおよび入金の監査情報の記録が含まれます。
 
 level_two:
-  - All actions by all users are logged. These records provide significant assistance to investigations into unexpected behaviour of the information system and can help identify malicious actors and responsible systems or persons.
+  - すべてのユーザーによるすべての操作が記録されます。これらの記録は、情報システムの予期しない動作の調査に重要なヒントとなり、悪意のある利用者や原因となるシステムや人物の特定に役立ちます。
 
 level_three:
-  - In addition to recording all actions performed within the system, this audit information is regularly backed up to a separate server. This act helps preserve valuable investigative information in the event the audit log is altered/destroyed during an attack on the information system.
+  - システム内で実行されるすべてのアクションを記録することに加えて、この監査情報は定期的に別のサーバーにバックアップされます。この仕組みは、情報システムへの攻撃中に監査ログが改ざんや破棄された場合に貴重な調査情報を維持するのに役立ちます。
 
 components:
   - component: &020401
     id: 2.4.1
-    title_short: Application Audit Logs
-    uncertified: No audit logs
-    level_one: Audit logs exist for some actions within the system
-    level_two: Full audit trail exists of all user/admin actions
-    level_three: Full audit trail exists of all user/admin actions
+    title_short: アプリケーション監査ログ
+    uncertified: 監査ログはない
+    level_one: いくつかの業務で監査証跡がある
+    level_two: すべてのユーザ・管理者の行動に対し監査証跡がある
+    level_three: すべてのユーザ・管理者の行動に対し監査証跡がある
   - component: &020402
     id: 2.4.2
     title_short: Backup of Audit Logs
     uncertified:
     level_one:
     level_two:
-    level_three: Backups of audit data are performed regularly
+    level_three: 監査データを定期的にバックアップしている
