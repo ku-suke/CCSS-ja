@@ -7,31 +7,31 @@
 ###################################################
 
 id: 2.03
-title: Proof of Reserve (PoR)
+title: 資金残高の証明 (PoR)
 file: 203-ProofOfReserve
 
 category: オペレーション
 
 description: >
-  This aspect covers the proof of control of all funds that should be held by the information system. There have been known cases where information systems that should be operating with a full reserve of user funds have been operating with a fraction of that reserve instead leading to an inability of the system to cover simultaneous withdrawals by all users. These [proofs of reserve](#proof-of-reserve) provide assurance to the public that all funds are available to the system which eliminates the risks of fund loss.
+  この観点は、情報システムが保有すべきすべての[資金管理の証明](#proof-of-reserve) をカバーしています。既知のケースとして、情報システムに記録されている顧客の資金残高のすべてを保管できていないことにより、そのシステムが全利用者による同時引き出しをカバーできないことがあります。これらの残高証明は、すべての資金が保全されていることを公に保証することにより、顧客にとって資金損失のリスクを排除します。
 
 level_one:
-  - An audit has been completed and published online that proves full control of all funds held by the information system. The audit has been signed by an independent party that attests to the accuracy of the audit at the time it was performed which reduces the risks associated with inaccurate or misleading reports.
+  - 情報システムが保有するすべての資金を完全に管理していることを証明する監査がオンラインで完了し、公開されています。監査は、実施された時点で監査の正確性を証明する独立した当事者によって署名されており、不正確または誤解を招く報告が行われるリスクを軽減します。
 
 level_two:
-  - The organization conducts regularly-scheduled [proof of reserve](#proof-of-reserve) audits that provide proof that the organization continues to operate on a full reserve and that all user funds are accessible at the time each audit is completed.
+  - 組織は定期的に分別管理監査を実施し、組織が完全な準備金を保有し続けており、各監査が完了した時点ですべてのユーザー資金が利用可能なことを証明します。
 
 level_three:
-  - The information system is designed in such a way that an independent audit is not necessary to prove complete accessibility of user funds. The information system makes use of public ledgers such as blockchains themselves to make this information available to the public allowing anyone to conduct an audit independently.
+  - 情報システムは、ユーザー資金の保全を証明するために独立した監査が必要でないように設計されています。情報システムは、ブロックチェーンのような公開台帳を利用して、この情報を一般の人々が利用できるようにして、誰もが独立して監査を行うことを可能にします。
 
 components:
   - component: &020301
     id: 2.3.1
-    title_short: Proof of Reserve Audits
-    uncertified: No audit has been performed
-    level_one: A PoR audit has been completed
-    level_two: Regularly-scheduled release of PoR audits
+    title_short: 分別管理監査
+    uncertified: 監査は実施されていない
+    level_one: 分別管理監査が実施された
+    level_two: 定期的な分別管理監査が実施される
     level_three: |
-      The system does not hold any funds at all
-      OR
-      The ledger is openly viewable by all, so no PoR audits are necessary
+      システムは資金を全く保有していない
+      または
+      台帳はすべて公開されているため、監査の必要がない

@@ -7,35 +7,35 @@
 ###################################################
 
 id: 2.02
-title: Data Sanitization Policy (DSP)
+title: データの破棄ポリシー (DSP)
 file: 202-DataSanitizationPolicy
 
 category: オペレーション
 
 description: >
-  This aspect covers the removal of cryptographic [keys](#key) from digital media. Due to the manner in which file systems allocate data on digital media, digital forensic techniques can be employed to read old data that has previously been deleted. Proper sanitization of digital media ensures the proper removal of all keys, eliminating the risk of information leakage from decommissioned devices like servers, hard disk drives, and removable storage.
+  この観点では、デジタルメディアからの暗号鍵の削除について説明します。ファイルシステムがデジタルデータを記録する仕組み上、デジタルフォレンジック技術を使用することで、削除された古いデータを復元することが可能です。デジタルメディアの適切な廃棄処理により、すべての[暗号鍵](#key)を適切な方法で削除し、サーバやハードディスクドライブ、リムーバブルストレージなど廃棄されたデバイスからの情報漏洩のリスクを排除します。
 
 level_one:
-  - The organization's staff is aware of how data persists on digital media after deletion. Staff also have access to tools that perform secure deletion of data and understand when to use such tools to permanently destroy any transient copies of cryptographic [keys](#key) that may be required during the maintenance of the information system.
+  - 組織のスタッフは、削除後にデータがデジタルメディアにどのように残っているかを認識しています。また、スタッフは、データの安全な削除を実行するツールを使用し、情報システムのメンテナンス中に一時的に必要となる[暗号鍵](#key)のコピーを完全に消去する方法を理解します。
 
 level_two:
-  - A detailed policy outlining the requirements for sanitization of digital media that holds/held cryptocurrency [keys](#key) exists and is read/understood by all staff who have access to cryptographic keys. Procedure documents outline where sanitization is required in their processes.
+  - 暗号鍵を保存する、または過去にしていたデジタルメディアの消去要件を解説する詳細な方針が存在し、暗号鍵にアクセスできるすべてのスタッフが理解しています。手順書には、そのプロセスで完全な消去が必要な場所の概要が記載されています。
 
 level_three:
-  - In addition to the above, an audit trail is maintained for every piece of sanitized media. These audit documents identify the staff member who performed the sanitization, the specific identifiers of the media that was sanitized, which tool and configuration was used to perform the sanitization, and all other relevant pertinent information.
+  - 上記に加えて、監査証跡は、すべての完全消去されたメディアに対して記録されます。これらの監査書類には、消去作業を行ったスタッフ、完全消去されたメディアの特定の識別子、消去作業を実行するために使用されたツールと構成、およびその他すべての関連情報が記載されています。
 
 components:
   - component: &020201
     id: 2.2.1
-    title_short: DSP Exists
-    uncertified: No sanitization is performed on decommissioned media
-    level_one: Staff is aware of how data remains on digital media after deletion, how to securely wipe data, and when secure wiping should be used
-    level_two: Destruction guidelines exist to educate/remind staff about securely deleting data data, and where they should do this within their workflow
-    level_three: Detailed policy covering sanitization requirements, procedures, and validation steps for every media type used by business
+    title_short: 破棄ポリシー(DSP)の存在
+    uncertified: 破棄されたメディアに対して完全消去が実施されていない
+    level_one: スタッフは、データ削除後にもデジタルメディアにどのように残っているか、およびデータを確実に消去する方法、安全なデータ消去をいつ使用すべきかを認識している
+    level_two: データの完全な削除について、そしてワークフロー内でこれを行うべき場所について教え、思い出させるための廃棄ガイドラインがある
+    level_three: ビジネスで使用されるすべてのメディアタイプのデータ削除要件、削除手順、および検証手順を網羅する詳細なポリシーがある
   - component: &020202
     id: 2.2.2
-    title_short: Audit Trail of all media sanitization
+    title_short: 全メディアの廃棄に対する監査
     uncertified:
     level_one:
     level_two:
-    level_three: Audit trails are maintained for every piece of sanitized media
+    level_three: すべての廃棄されたメディアに対して監査証跡がある
