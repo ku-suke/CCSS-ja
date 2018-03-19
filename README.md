@@ -1,3 +1,10 @@
+# [暗号通貨セキュリティ標準CCSS](https://cryptoconsortium.github.io/CCSS/) 非公式日本語訳
+
+ビットコインなど暗号通貨を取り扱ううえで必要なウォレットやアドレスなどのセキュリティ、監査などオペレーションについて要件を定めたCCSSを日本語訳しています。Jekyllのキーワード埋め込みを使用しています。翻訳についてのご指摘はissueよりお願いいたします。
+
+以下オリジナル：
+
+
 # [The CryptoCurrency Security Standard](https://cryptoconsortium.github.io/CCSS/)
 
 CryptoCurrency Security Standard (CCSS) is a set of requirements for all information systems that make use of cryptocurrencies. By standardizing the techniques and methodologies used by systems around the globe, end-users will be able to easily make educated decisions about which products and services to use and with which companies they wish to align.
