@@ -1,6 +1,6 @@
 
 id: dust
-term: Dust Transactions
+term: ダスト・トランザクション
 file: Dust
 description: >
-  It has become common for some users of a blockchain-based system to send very low quantities of blockchain tokens (often called "dust") to addresses for a variety of reasons. Depending on how your information system is designed, large quantities of these very small transactions could cause a Denial of Service attack if your system performs significant amounts of processing on all incoming transactions. Alternatively, accounting inconsistencies can result from ignoring these small transactions. Those who design or implement blockchain-based systems should keep these two competing tradeoffs in mind when deciding how the system should carry out the business rules it was designed to perform.
+  ブロックチェーンをベースとしたシステムでは、様々な理由から非常に少量のブロックチェーントークン(多くの場合「ダスト」と呼ばれる)を送信するユーザーが増えています。情報システムの設計によっては、こうした少量のトランザクションが大量に流入することでシステムに著しい処理負荷がかかり DoS(サービス妨害)攻撃のような状態に陥る可能性があります。また、これら少額のトランザクションを無視すると会計上の不整合が生じます。ブロックチェーンベースのシステムを設計または実装する場合は、これら 2 つの相対するトレードオフを理解してシステムの対象となるビジネスルールの実行方法を決定することが必要となります。
